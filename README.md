@@ -27,7 +27,15 @@
 #### 10. 在Hardware視窗內選擇xczu28dr_0按滑鼠右鍵，選擇Program Device，按下Program燒錄bit檔案與ltx檔案，等待燒錄完成。
 <p align=center><img src="https://github.com/weirenxue/zcu111-ILA/blob/master/pic/Program_Device.png"  title="Program Device" width="80%"></p>
 
-#### 11. 到SDK開啟一個Hellow World的Application Project，並燒錄到PS(Run As/Launch on Hardware(GDB)[zcu111-EMIO](https://github.com/weirenxue/zcu111-EMIO))，此步驟的用意是初始化PS，否則ILA無法使用。
+#### 11. 到SDK開啟一個Hellow World的Application Project，並燒錄到PS(Run As/Launch on Hardware(GDB))(參考[zcu111-EMIO](https://github.com/weirenxue/zcu111-EMIO))，此步驟的用意是初始化PS，否則ILA無法使用。
 
 #### 12. PS初始化成功後，回到Vivado界面，點擊在步驟10有出現的Refresh device，ILA就會出現！
 <p align=center><img src="https://github.com/weirenxue/zcu111-ILA/blob/master/pic/ILA_appear.png"  title="ILA appear" width="80%"></p>
+
+#### 13. 現在還沒有波形，按藍色三角形圖示(Run Trigger)，波形就會出現了，此設計中預設輸出是全部為0。
+<p align=center><img src="https://github.com/weirenxue/zcu111-ILA/blob/master/pic/ILA_wave_default.png"  title="ILA default wave" width="80%"></p>
+
+#### 14. 燒錄/code/main.c到PS上，程式碼功能為使GPIO輸出為1100_0011。
+
+#### 15. 再按一次(Run Trigger)，此時ILA的probe量測到的的確為1100_0011。
+<p align=center><img src="https://github.com/weirenxue/zcu111-ILA/blob/master/pic/ILA_wave_changed.png"  title="ILA changed wave" width="80%"></p>
