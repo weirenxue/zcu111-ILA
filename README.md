@@ -1,2 +1,2 @@
-# zcu111-ILA
-ZCU111 ILA的IP使用範例。
+# ZCU111 ILA的IP使用範例。
+##### 開發工具：Vivado2019.1，SDK2019.1，ZCU111開發板與相關資料。
