@@ -37,5 +37,5 @@
 
 #### 14. 燒錄/code/main.c到PS上，程式碼功能為使GPIO輸出為1100_0011。
 
-#### 15. 再按一次(Run Trigger)，此時ILA的probe量測到的的確為1100_0011。
+#### 15. 再按一次Run Trigger，此時ILA的probe量測到的的確為1100_0011。
 <p align=center><img src="https://github.com/weirenxue/zcu111-ILA/blob/master/pic/ILA_wave_changed.png"  title="ILA changed wave" width="80%"></p>
